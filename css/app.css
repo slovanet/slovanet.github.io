@@ -1,0 +1,143 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    --app-section-bg-color: #fff;
+    --app-section-inverse-bg-color: #252525;
+
+    --mdc-theme-primary: #d90000;
+}
+
+.section {
+    min-height: 100px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--app-section-bg-color);
+}
+
+.section--inverse {
+    background-color: var(--app-section-inverse-bg-color);
+}
+
+.section--red {
+    --mdc-theme-primary: #404040;
+
+    background-image: url(../img/carbon-cerveny-cta.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section--red .mdc-typography--headline5 {
+    color: var(--mdc-theme-text-primary-on-dark);
+}
+
+.section--red .mdc-typography--subtitle2 {
+    color: var(--mdc-theme-text-primary-on-dark);
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.section--black {
+    background-image: url(../img/footer-carbon-L.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section--header {
+    padding-bottom: 120px;
+}
+
+.section--header + .section {
+    margin-top: -120px;
+    background: transparent;
+}
+
+.section--footer {
+    padding: 0;
+    color: var(--mdc-theme-text-secondary-on-dark);
+    min-height: auto;
+    font-size: .8em;
+}
+
+.logo {
+    margin: 20px auto;
+    display: block;
+}
+
+.headline {
+    font-family: "DINPro";
+    text-align: center;
+    color: var(--mdc-theme-text-secondary-on-dark);
+    max-width:1280px;
+    width:90%
+}
+
+.container {
+    margin:0 auto;
+    max-width:1280px;
+    width:90%
+}
+
+.mdc-card {
+    margin: 0 40px;
+}
+
+.mdc-card .mdc-typography--headline6 {
+    margin: 15px 0;
+    text-align: center;
+    font-family: "DINPro";
+}
+
+.mdc-card .mdc-typography--body1 {
+    padding: 0 20px;
+    text-align: center;
+    color: var(--mdc-theme-text-secondary-on-background);
+}
+
+.mdc-card__media-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mdc-card__media-content svg {
+    color: var(--mdc-theme-primary);
+    width: 128px;
+    height: 128px;
+}
+
+.my-card__media {
+    border-top: 6px solid var(--mdc-theme-primary);
+}
+
+.mdc-card__actions {
+    justify-content: center;
+}
+
+/* tablet */
+@media (max-width:839px) {
+    .logo {
+        max-width: 70vw;
+    }
+
+    .container {
+        width:98%
+    }
+
+    .mdc-card {
+        margin: 0;
+    }
+}
+
+/* phone */
+@media (max-width: 599px) {
+}
