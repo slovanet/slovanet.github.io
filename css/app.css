@@ -66,6 +66,48 @@ body {
     font-size: .8em;
 }
 
+.section--footer .mdc-typography--subtitle2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--mdc-theme-text-primary-on-dark);
+}
+
+.section--footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.section--footer li + li {
+    margin-top: 8px;
+}
+
+.section--footer a {
+    text-decoration: none;
+    transition: all .3s ease-out;
+    color: var(--mdc-theme-text-hint-on-dark);
+}
+
+.section--footer a:hover {
+    color: var(--mdc-theme-primary);
+}
+
+.link--social {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid var(--mdc-theme-text-hint-on-dark);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.link--social:hover {
+    border-color: var(--mdc-theme-primary);
+}
+
 .logo {
     margin: 20px auto;
     display: block;
